@@ -734,6 +734,7 @@ LIBTCCAPI TCCState *tcc_new(void)
     ++nb_states;
 
     s->alacarte_link = 1;
+	s->static_link = 1;
     s->nocommon = 1;
     s->warn_implicit_function_declaration = 1;
     s->ms_extensions = 1;
